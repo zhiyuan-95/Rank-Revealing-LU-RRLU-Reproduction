@@ -1,4 +1,4 @@
-# Rank-Revealing-LU-RRLU-Reproduction
+# Rank-Revealing LU Decomposition (RRLU)
 This repository contains a Python implementation of the Rank-Revealing LU (RRLU) decomposition algorithm. Unlike standard LU decomposition, RRLU is designed to reliably reveal the numerical rank of a matrix and provide a stable basis for the range and null space, even in the presence of ill-conditioning.
 
 ### 🚀 Overview
@@ -27,5 +27,8 @@ The project is contained within a Jupyter Notebook (RRLU.ipynb) and utilizes:
 
 ### 📝 Mathematical Context
 The retriangularization process ensures that if a column swap breaks the triangular structure, we apply a sequence of elementary transformations $E$ such that: 
-$$$L_{new} = L \cdot E^{-1}, \quad U_{new} = E \cdot U$$
+$$L_{new} = L \cdot E^{-1}, \quad U_{new} = E \cdot U$$. 
 This maintains the validity of the decomposition while updating the rank information.
+### reference
+[On the existence and computation of.pdf](https://github.com/user-attachments/files/25025141/On.the.existence.and.computation.of.pdf)
+
